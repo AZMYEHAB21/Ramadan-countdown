@@ -175,7 +175,7 @@ function shareOnTwitter() {
 
 function shareOnWhatsApp() {
     const url = window.location.href;
-    const text = 'عداد رمضان 2027 - شارك معي العد التنازلي لشهر الخير والبركة! ❤️';
+    const text = 'عداد رمضان 2027 - شارك معي العد التنازلي لشهر الخير والبركة! ';
     const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(text + ' ' + url)}`;
     window.open(whatsappUrl, '_blank');
 }

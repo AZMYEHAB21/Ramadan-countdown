@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عداد رمضان 2027 - Ramadan Countdown</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="background"></div>
+    
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="moon-icon">🌙</div>
+            <h1 class="title">عداد رمضان</h1>
+            <p class="subtitle">Ramadan Countdown 2027</p>
+        </header>
+
+        <!-- Main Counter Section -->
+        <main class="main-content">
+            <div class="counter-wrapper">
+                <div class="glow-effect"></div>
+                
+                <div class="counter-grid">
+                    <div class="counter-item">
+                        <div class="counter-value" id="days">00</div>
+                        <div class="counter-label">أيام<br><span>Days</span></div>
+                    </div>
+                    
+                    <div class="counter-separator">:</div>
+                    
+                    <div class="counter-item">
+                        <div class="counter-value" id="hours">00</div>
+                        <div class="counter-label">ساعات<br><span>Hours</span></div>
+                    </div>
+                    
+                    <div class="counter-separator">:</div>
+                    
+                    <div class="counter-item">
+                        <div class="counter-value" id="minutes">00</div>
+                        <div class="counter-label">دقائق<br><span>Minutes</span></div>
+                    </div>
+                    
+                    <div class="counter-separator">:</div>
+                    
+                    <div class="counter-item">
+                        <div class="counter-value" id="seconds">00</div>
+                        <div class="counter-label">ثواني<br><span>Seconds</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Date Information -->
+            <section class="date-info">
+                <div class="date-card">
+                    <p class="hijri-date">1 رمضان 1448 هـ</p>
+                    <p class="gregorian-date">Monday, February 8, 2027</p>
+                    <p class="gregorian-date-ar">الاثنين، 8 فبراير 2027</p>
+                </div>
+            </section>
+
+            <!-- Message Section -->
+            <section class="message-section">
+                <h2 class="message-title">شهر الخير والبركة</h2>
+                <p class="message-text">استعد لشهر رمضان المبارك - شهر الصيام والقرآن والدعاء</p>
+                <p class="message-text english">Prepare for the blessed month of Ramadan - the month of fasting, Quran, and prayers</p>
+            </section>
+
+            <!-- Stats Section -->
+            <section class="stats-section">
+                <div class="stat-card">
+                    <div class="stat-icon">📅</div>
+                    <p class="stat-text">شهر واحد مبارك</p>
+                    <p class="stat-subtext">One Blessed Month</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🕌</div>
+                    <p class="stat-text">30 يوم من التقوى</p>
+                    <p class="stat-subtext">30 Days of Piety</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">📖</div>
+                    <p class="stat-text">قراءة القرآن الكريم</p>
+                    <p class="stat-subtext">Reading the Quran</p>
+                </div>
+            </section>
+
+            <!-- Share Section -->
+<section class="share-section">
+    <h3 class="share-title">شارك الموقع</h3>
+    <div class="share-buttons">
+
+        <button class="share-btn facebook-btn" onclick="shareOnFacebook()" title="شارك على فيسبوك">
+            <i class="fab fa-facebook-f"></i>
+        </button>
+
+        <button class="share-btn twitter-btn" onclick="shareOnTwitter()" title="شارك على تويتر">
+            <i class="fab fa-x-twitter"></i>
+        </button>
+
+        <button class="share-btn whatsapp-btn" onclick="shareOnWhatsApp()" title="شارك على واتس آب">
+            <i class="fab fa-whatsapp"></i>
+        </button>
+
+        <button class="share-btn telegram-btn" onclick="shareOnTelegram()" title="شارك على تليجرام">
+            <i class="fab fa-telegram"></i>
+        </button>
+
+        <button class="share-btn copy-btn" onclick="copyLink()" title="انسخ الرابط">
+            <i class="fas fa-copy"></i>
+        </button>
+
+    </div>
+</section>
+        </main>
+
+        <!-- Celebration Modal -->
+        <div id="celebrationModal" class="modal hidden">
+            <div class="modal-content">
+                <div class="celebration-inner">
+                    <div class="modal-close" onclick="closeCelebration()">×</div>
+                    <div class="celebration-emoji">🌙</div>
+                    <h2 class="celebration-title">رمضان مبارك!</h2>
+                    <h2 class="celebration-title-en">Ramadan Kareem!</h2>
+                    <p class="celebration-text">لقد وصل شهر رمضان المبارك</p>
+                    <p class="celebration-text-en">The blessed month of Ramadan has arrived</p>
+                    <p class="celebration-subtext">كل عام وأنتم بألف خير</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>رمضان كريم - جزاك الله خيراً</p>
+            <p>Ramadan Kareem - May Allah reward you with goodness</p>
+            <div class="copyright">
+                <p>&copy; 2027 AZMY EHAB. All Rights Reserved.</p>
+                <p>جميع الحقوق محفوظة © 2027 AZMY EHAB</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
